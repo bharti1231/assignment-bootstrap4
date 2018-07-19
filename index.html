@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<head>
+	<title>Leafly</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="bootstrap/css/bootstrap.css">
+	<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css" rel="stylesheet">
+	<link rel="stylesheet" href="bootstrap/css/style.css">
+	<script src="bootstrap/js/jquery.min.js"></script>
+	<script src="bootstrap/js/popper.min.js"></script>
+	<script src="bootstrap/js/bootstrap.js"></script>
+	<style> 
+	.img-fluid{
+		max-width: 69%;
+		height: auto;
+	}
+	.img-fluid2{
+		max-width: 59%;
+		height: auto;
+	}
+	#p01{height:55%; width:60%;}
+	#parallax-image .parallax-one{
+		overflow: hidden;
+		position: relative;
+		width:100%;
+		height:332px;
+		background-image: url(images/1.png);
+		background-attachment: fixed;
+
+
+	}
+	#parallax-image .parallax-two{
+		overflow: hidden;
+		position: relative;
+		width: 426px;
+		height: 332px;
+		background-image: url(images/2.png);
+		background-attachment: fixed;
+		margin-left: -13%;
+	}
+	#parallax-image .parallax-three{
+		overflow: hidden;
+		position: relative;
+		width: 426px;
+		height: 332px;
+		background-image: url(images/3.png);
+		background-attachment: fixed;
+		margin-left: -1%;
+	}
+	.background {
+		position: relative;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: auto;
+	}
+	.background :hover{background-color:rgba(0,0,0,0.6);}
+	.blur {
+		-webkit-filter: blur(2px);
+		filter: blur(2px);
+		height: 521px;
+		width: 100%;
+	}
+	.foreground {
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		background-color: rgba(0,0,0,0.4);
+	}
+	.foreground2{
+		position: absolute;
+		top: 0;
+		left: -17px;
+		width: 428px;
+		height: 100%;
+		background-color: rgba(44, 43, 43, 0.4);
+	}
+	.foreground3{
+    position: absolute;
+    top: 0;
+    left: -1px;
+    width: 435px;
+    height: 100%;
+	background-color: rgba(44, 43, 43, 0.4);
+	}
+
+</style>	
+</head>
+
+<body>
+
+	<div class="navigation-top-gradient"></div>
+	<nav class="navbar navbar-expand-lg border-bottom">
+		<a class="navbar-brand" href="#"><img src="images/download.png" alt="logo" class="logo"></a>
+		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+			<span class="navbar-toggler-icon"></span>
+		</button>
+		<div class="collapse navbar-collapse" id="navbarSupportedContent">
+			<ul class="navbar-nav mr-auto ml-5">
+				<li class="nav-item">
+					<a class="nav-link " href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">DISPENSARIES</a>
+					<div class="dropdown-menu" aria-labelledby="navbarDropdown">
+						<div class="container">
+							<div class="row">
+								<div class="col-3">
+									<ul class="nav flex-column">
+										<li class="nav-item">
+											<a class="nav-link active text-dark" href="#">All Dispensaries</a>
+											<a class="nav-link active text-dark" href="#">Doctors</a>
+										</li>
+										<li class="nav-item">
+											<a class="nav-link text-dark" href="#">Deals Near You<span class="ml-3 border dolar">$</span></a>
+										</li>
+									</ul>
+								</div>
+								<!-- /.col-md-4  --> 
+								<div class="col border mr-3 mt-3 pt-3 pb-2 pl-4 pr-4">
+									<center>
+										<a href="">
+											<img src="images/1st.jpg" alt="" class="img-fluid">
+										</a>
+									</center>
+									<h5 class="text-dark text-center">Hemp Embassy</h5>
+									<div class="text-center">
+										<i class="fa fa-star-o checked" aria-hidden="true"></i>
+										<i class="fa fa-star-o checked" aria-hidden="true"></i>
+										<i class="fa fa-star-o checked" aria-hidden="true"></i>
+										<i class="fa fa-star-o checked" aria-hidden="true"></i>
+										<i class="fa fa-star-o checked" aria-hidden="true"></i>
+									</div>
+									<p class="text-center text-dark mt-2">0 | 0 Reviews</p>	
+								</div>
+								<!-- /.col-md-4  -->
+								<div class="col border  mr-3 mt-3 pt-3 pb-2 pl-4 pr-4">
+									<center>
+										<a href="">
+											<img src="images/2nt.png" alt="" class="img-fluid">
+										</a>
+									</center>
+									<h5 class="text-dark text-center">Left Coast Collective</h5>
+									<div class="text-center">
+										<span class="fa fa-star checked"></span>
+										<span class="fa fa-star checked"></span>
+										<span class="fa fa-star checked"></span>
+										<span class="fa fa-star" style="font-size:18px"></span>
+										<span class="fa fa-star" style="font-size:18px"></span>
+									</div>
+									<p class="text-center text-dark mt-2">4.9 | 7 Reviews</p>
+								</div>
+								<div class="col border  mr-3 mt-3 pt-3 pb-2 pl-4 pr-4 ">
+									<a href="">
+										<center>
+											<img src="images/3nd.jpg" alt="" class="img-fluid">
+										</center>
+									</a>	
+									<h5 class="text-dark text-center">Puffland </h5>
+									<div class="text-center">
+										<span class="fa fa-star checked"></span>
+										<span class="fa fa-star checked"></span>
+										<span class="fa fa-star checked"></span>
+										<span class="fa fa-star checked"></span>
+										<i class="fa fa-star-half-empty checked"></i>
+									</div>
+									<p class="text-center text-dark">4.7 | 32 Reviews</p>
+								</div>
+								<!-- /.col-md-4  -->
+							</div>
+						</div>
+						<!--  /.container  -->
+					</div>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">STRAINS</a>
+					<div class="dropdown-menu" aria-labelledby="navbarDropdown">
+						<div class="container">
+							<div class="row">
+								<div class="col-3">
+									<ul class="nav flex-column">
+										<li class="nav-item active">
+											<a class="nav-link active text-dark" href="#">Hyrid</a>
+											<a class="nav-link active text-dark" href="#">Indica</a>
+											<a class="nav-link text-dark" href="#">Sativa</a>
+											<a class="nav-link text-dark" href="#">Curb Depression</a>
+											<a class="nav-link text-dark" href="#">Manage Migraines</a>
+											<a class="nav-link text-dark" href="#">Stay Productive</a>
+											<a class="nav-link text-dark" href="#">Sleep Well</a>
+										</li>
+									</ul>
+								</div>
+								<!-- /.col-md-4  --> 
+								<div class="col border mr-3 mt-3 pt-3 pb-2 pl-4 pr-4">
+									<center>
+										<div class="card bg-success" id="p01">
+											<div class="card-body text-dark">
+												<p class="card-text text-left">Hybrid </p>
+												<h1 class="card-text text-center">Bd</h1>
+												<small class="pagination justify-content-end ">Blue Dream</small>	
+											</div>	
+										</div>
+									</center>
+									<h5 class="text-dark text-center">Blue Dream</h5>
+									<div class="text-center">
+										<i class="fa fa-star-o checked" aria-hidden="true"></i>
+										<i class="fa fa-star-o checked" aria-hidden="true"></i>
+										<i class="fa fa-star-o checked" aria-hidden="true"></i>
+										<i class="fa fa-star-o checked" aria-hidden="true"></i>
+										<i class="fa fa-star-o checked" aria-hidden="true"></i>
+									</div>
+									<p class="text-center text-dark mt-2">4.40 | 1272 Reviews</p>	
+								</div>
+								<!-- /.col-md-4  -->
+								<div class="col border mr-3 mt-3 pt-3 pb-2 pl-4 pr-4">
+									<center>
+										<div class="card bg-danger" id="p01">
+											<div class="card-body text-dark">
+												<p class="card-text text-left">Sativa</p>
+												<h1 class="card-text text-center">Sd</h1>
+												<small class="pagination justify-content-end ">Sour Diesel</small>	
+											</div>	
+										</div>
+									</center>
+									<h5 class="text-dark text-center">Sour Diesel</h5>
+									<div class="text-center">
+										<i class="fa fa-star-o checked" aria-hidden="true"></i>
+										<i class="fa fa-star-o checked" aria-hidden="true"></i>
+										<i class="fa fa-star-o checked" aria-hidden="true"></i>
+										<i class="fa fa-star-o checked" aria-hidden="true"></i>
+										<i class="fa fa-star-o checked" aria-hidden="true"></i>
+									</div>
+									<p class="text-center text-dark mt-2">4.4| 4927 Reviews</p>	
+								</div>
+								<div class="col border mr-3 mt-3 pt-3 pb-2 pl-4 pr-4">
+									<center>
+										<div class="card bg-success" id="p01">
+											<div class="card-body text-dark">
+												<p class="card-text text-left">Hybrid </p>
+												<h1 class="card-text text-center">Gsc</h1>
+												<small class="pagination justify-content-end ">Gsc</small>	
+											</div>	
+										</div>
+									</center>
+									<h5 class="text-dark text-center">Gsc</h5>
+									<div class="text-center">
+										<i class="fa fa-star-o checked" aria-hidden="true"></i>
+										<i class="fa fa-star-o checked" aria-hidden="true"></i>
+										<i class="fa fa-star-o checked" aria-hidden="true"></i>
+										<i class="fa fa-star-o checked" aria-hidden="true"></i>
+										<i class="fa fa-star-o checked" aria-hidden="true"></i>
+									</div>
+									<p class="text-center text-dark mt-2">4.5| 4790 Reviews</p>	
+								</div>
+								<!-- /.col-md-4  -->
+							</div>
+						</div>
+						<!--  /.container  -->
+					</div>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+					NEWS</a>
+					<div class="dropdown-menu" aria-labelledby="navbarDropdown">
+						<div class="container">
+							<div class="row">
+								<div class="col-3">
+									<ul class="nav flex-column">
+										<li class="nav-item">
+											<a class="nav-link active text-dark mb-3" href="#">Growing</a>
+											<a class="nav-link text-dark" href="#">Strains & Products</a>
+											<a class="nav-link text-dark" href="#">Polities</a>
+											<a class="nav-link text-dark" href="#">Health</a>
+											<a class="nav-link text-dark" href="#">Lifestyle</a>
+											<a class="nav-link text-dark" href="#">Science & Tech</a>
+											<a class="nav-link text-dark" href="#">Industry</a>
+										</li> 
+									</ul>
+								</div>
+								<div class="col border mr-3 mt-3 pt-3 pb-2 pl-4 pr-4">
+									<center>
+										<a href="">
+											<img src="images/medical-cbd.jpg" alt="" class="img-fluid1">
+										</a>
+									</center>
+									<h5 class="text-dark text-center">Is FDA-Approved Cannabidiol a Blessing Or Curse?</h5>
+									
+								</div>
+								<!-- /.col-md-4  -->
+								<div class="col border  mr-3 mt-3 pt-3 pb-2 pl-4 pr-4">
+									<center>
+										<a href="">
+											<img src="images/news2.jpg" alt="" class="img-fluid1">
+										</a>
+									</center>
+									<h5 class="text-dark text-center">Across Gender, Race, and Party, More Americans Than Ever Support Cannabis Legalization</h5>
+								</div>
+								<div class="col border  mr-3 mt-3 pt-3 pb-2 pl-4 pr-4 ">
+									<a href="">
+										<center>
+											<img src="images/news3.jpg" alt="" class="img-fluid1">
+										</center>
+									</a>	
+									<h5 class="text-dark text-center">What Are You Smoking? Episode 41: Meet OTTO, The Joint-Rolling Robot</h5>
+								</div>
+								<!-- /.col-md-4  -->
+							</div>
+						</div>
+						<!--  /.container  -->
+					</div>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link dropdown-toggle " href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+					PRODUCTS</a>
+					<div class="dropdown-menu" aria-labelledby="navbarDropdown">
+						<div class="container">
+							<div class="row">
+								<div class="col-3">
+									<ul class="nav flex-column">
+										<li class="nav-item">
+											<a class="nav-link active text-dark" href="#">Cannabis</a>
+											<a class="nav-link active text-dark" href="#">Concentrates</a>
+											<a class="nav-link text-dark" href="#">Dabbing</a>
+											<a class="nav-link text-dark" href="#">Edibles</a>
+											<a class="nav-link text-dark" href="#">Growing</a>
+											<a class="nav-link text-dark" href="#">Smoking</a>
+											<a class="nav-link text-dark" href="#">Vaping</a>
+											<a class="nav-link text-dark" href="#">Shop Leafly</a>
+										</li>
+									</ul>
+								</div>
+								<div class="col border mr-3 mt-3 pt-3 pb-2 pl-4 pr-4">
+									<center>
+										<a href="">
+											<img src="images/smokcake.jpg" alt="" class="img-fluid">
+										</a>
+									</center>
+									<h5 class="text-dark text-center">Smoke Cartel</h5>
+									<p class="text-dark text-center">UPC "Moonshiner" TankBubbler</p>									
+								</div>
+								<!-- /.col-md-4  -->
+								<div class="col border  mr-3 mt-3 pt-3 pb-2 pl-4 pr-4">
+									<center>
+										<a href="">
+											<img src="images/burtonkit.jpg" alt="" class="img-fluid">
+										</a>
+									</center>
+									<h5 class="text-dark text-center">Burton The Kit</h5>
+								</div>
+								<div class="col border  mr-3 mt-3 pt-3 pb-2 pl-4 pr-4 ">
+									<a href="">
+										<center>
+											<img src="images/hervilizer.png" alt="" class="img-fluid">
+										</center>
+									</a>	
+									<h5 class="text-dark text-center">Herbalize</h5>
+									<p class="text-dark text-center">The Desktop Vaporizer</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link dropdown-toggle " href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+					LEAFLYTV</a>
+					<div class="dropdown-menu" aria-labelledby="navbarDropdown">
+							<!--  /.container  -->
+					</div>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link ml-5"href="#">SEARCH
+						<span>
+							<i class="fa fa-search" aria-hidden="true"></i></span>
+						</a>
+					</li>
+					<div class="btn-group btn-sm ml-5">
+						<button type="button" class="btn btn-dark ">join</button>
+						<button type="button" class="btn btn-btn-outline-primary">login</button>
+					</div>
+				</ul>
+			</div>
+		</nav>
+		<div class="container-fluid">
+	 <div class="row ">
+	   <div class="col bg-light text-center text-dark p-2">
+			The World's Cannbis Information Resource</div>
+		</div>
+		
+	</div>
+	<div class="container-fluid">
+		<div class="row border no-gutters">
+			<div class="col-4  border">   
+				<div id="parallax-image" class="background">
+					<div class="parallax-one blur ">
+					</div>	 
+					<div class="text text-center text-white font-weight-light foreground" >
+						<h1 style="margin-top:20%;">FIND</h1>  
+						<h3>DISPENSARIES</h3>   
+					</div>
+				</div> 
+			</div>
+			<div class="col-4 border">
+				<div class="col-4  border">   
+					<div id="parallax-image" class="background">
+						<div class="parallax-two blur ">
+						</div>	 
+						<div class="text text-center text-white font-weight-light foreground2" >
+							<h1 style="margin-top:20%;">WATCH</h1>  
+							<h3>NEW VIDEOS</h3>   
+						</div>
+					</div> 
+				</div>
+			</div>
+			<div class="col-4  border">   
+				<div id="parallax-image" class="background">
+					<div class="parallax-three blur ">
+					</div>	 
+					<div class="text text-center text-white font-weight-light foreground3" >
+						<h1 style="margin-top:20%;">EXPLORE</h1>  
+						<h3>STRAINS</h3>   
+					</div>
+				</div> 
+			</div>
+		</div>
+	</div>
+
+</body>
+</html>
